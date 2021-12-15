@@ -49,15 +49,18 @@
 
 
     <!--Navbar--> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0 px-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm m-0">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand px-5" href="#">
           <svg class="bi me-2" width="147.283" height="19" role="img" aria-label="uselessthings"><use xlink:href="#uselessthings"/></svg>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+        
+
+        <button class="navbar-toggler px-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex flex-fill justify-content-end align-items-center">
             <a class="nav-link mx-2 active" aria-current="page" href="#">UT Square</a>
             <a class="nav-link mx-2" href="#">Help Board</a>
@@ -79,25 +82,25 @@
       <div class="main container-fluid py-4 px-5">
 
         <div class="card" id="is--blue">
-          <div class="thumbnail-overlay d-flex align-items-center" id="sh--blue">
-            <div class="d-flex flex-columns p-3 flex-grow-1"><h2 class="thumbnail-title flex-grow-1">S.O.S</h2></div>
-            <div class="d-flex flex-column">
-              <button class="btn btn-thumbnail-top">📎</button>
-              <button class="btn btn-thumbnail-bottom">👏</button>
-            </div>
-          </div>
-          <img class="card-img-top thumbnail-image" src="assets/img/thumbnail-sos.jpg">
-        </div>
-
-        <div class="card tw-vertical" id="is--red">
-          <div class="thumbnail-overlay to-vertical d-flex align-items-center" id="sh--red">
+          <div class="card-overlay d-flex align-items-center" id="sh--blue">
             <div class="d-flex flex-columns p-3 flex-grow-1"><h2 class="card-title flex-grow-1">S.O.S</h2></div>
             <div class="d-flex flex-column">
               <button class="btn btn-thumbnail-top">📎</button>
               <button class="btn btn-thumbnail-bottom">👏</button>
             </div>
           </div>
-          <img class="card-img-top ti-vertical" src="assets/img/thumbnail-sos.jpg">
+          <img class="card-img-top user-select-none" src="assets/img/thumbnail-sos.jpg">
+        </div>
+
+        <div class="card tw-vertical" id="is--red">
+          <div class="card-overlay to-vertical d-flex align-items-center" id="sh--red">
+            <div class="d-flex flex-columns p-3 flex-grow-1"><h2 class="card-title flex-grow-1">S.O.S</h2></div>
+            <div class="d-flex flex-column">
+              <button class="btn btn-thumbnail-top">📎</button>
+              <button class="btn btn-thumbnail-bottom">👏</button>
+            </div>
+          </div>
+          <img class="card-img-top ti-vertical user-select-none" src="assets/img/thumbnail-sos.jpg">
         </div>
         
       </div>
