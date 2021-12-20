@@ -124,11 +124,11 @@
       <div class="main container-fluid py-4 px-5">
         <div class="container-fluid">
           <!--CREATE NEW-->
-          <div class="d-flex flex-row justify-content-between align-items-start">
+          <div class="create-step d-flex flex-column justify-content-between align-items-start">
             <svg class="bi me-2" role="img" width="185.427" height="38.405" aria-label="crearethings"><use xlink:href="#createthings"/></svg>
             
             <!--Progress Tab-->
-            <ul class="nav nav-pills align-items-center mb-3 py-1 px-5" id="pills-tab" role="tablist">
+            <ul class="step-progess d-flex flex-row nav nav-pills align-items-center mb-3 py-1 px-5" id="pills-tab" role="tablist">
               <!--Name-->
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">1</button>
@@ -183,14 +183,14 @@
               </li>
             </ul>
             
-            <button class="btn btn-outline-primary">Save Draft</button>
+            <button class="btn btn-outline-primary mt-1">Save Draft</button>
           </div>
           
           <!--Form-->
           <div class="tab-content pt-5" id="pills-tabContent">
             <!--Name-->
             <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-              <div>
+              <div class="thing-info mb-5">
                 <h3>Thing Name</h3>
               </div>
               <div id="Step1" class="form-text pb-3">ขั้นที่ 1: ตั้งชื่อ!</div>
@@ -205,7 +205,7 @@
             </div>
             <!--Teammates-->
             <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-              <div>
+              <div class="thing-info mb-5">
                 <h3>Thing Name</h3>
               </div>
               <div id="Step2" class="form-text pb-3">ขั้นที่ 2: เพื่อนร่วมทีม</div>
@@ -214,6 +214,11 @@
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="มีใครในทีมบ้าง?" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <span class="input-group-text" id="basic-addon2">+</span>
+                  </div>
+                  <div class="d-flex flex-row justify-content-center pb-3">
+                    <div class="profile-icon" id="is--pink">c</div>
+                    <div class="profile-icon" id="is--blue">c</div>
+                    <div class="profile-icon" id="is--teal">c</div>
                   </div>
                 </div>
                 <div>
@@ -224,7 +229,7 @@
             </div>
             <!--Story-->
             <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
-              <div>
+              <div class="thing-info mb-5">
                 <h3>Thing Name</h3>
               </div>
               <div id="Step2" class="form-text pb-3">ขั้นที่ 3: เรื่องเล่าของ ‘ของ’</div>

@@ -114,9 +114,10 @@ body {
     flex-direction: row;
   }
 }
+
 .btn {
     border-radius: 0.52em;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 0.8rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, opcaity 0.15s ease-in-out;
 }
 
@@ -460,9 +461,18 @@ body {
 
 .tab-content > .active {
   display: block;
-  padding-left: 13em;
-  padding-right: 13em;
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  .create-step {
+    flex-direction: row !important;
+  }
+
+  .tab-content > .active {
+    padding-left: 13em;
+    padding-right: 13em;
+  } 
 }
 
 .form-control {
@@ -472,7 +482,6 @@ body {
   color: var(--ut-grey);
   border: 1px solid #fff;
   border-radius: 0.5rem;
-
 }
 
 .form-control::-moz-placeholder {
@@ -483,7 +492,6 @@ body {
 .form-control::placeholder {
   color: var(--ut-md-grey);
   opacity: 1;
-
 }
 
 .input-group-text {
@@ -500,4 +508,16 @@ body {
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 0.5rem;
+}
+
+.profile-icon {
+  color: white;
+  border-radius: 0.52em;
+  padding: 0.4rem 0.8rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, opcaity 0.15s ease-in-out;
+}
+
+.step-progess {
+  padding-left: 0px;
+  padding-right: 0px;
 }
