@@ -54,6 +54,7 @@
 
 body {
     background-color: var(--ut-bg-grey);
+    font-weight: 300;
 }
 
 .container-fluid {
@@ -426,16 +427,15 @@ body {
 
 .footer {
   text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 .text-muted {
   --bs-text-opacity: 1;
   color: var(--ut-md-grey) !important;
   font-size: smaller;
-}
-
-.main {
-  height: 85vh;
 }
 
 .nav-pills .nav-link {
@@ -520,4 +520,210 @@ body {
 .step-progess {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+
+#item {
+  display: grid;
+  width: 100%;
+  grid-template-areas: 
+    "thing"
+    "gallery"
+    "info"
+    "technique"
+    "steps"
+    "chat";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  width: 80%;
+}
+
+#item > .gallery {
+  grid-area: gallery;
+  width: 18em;
+  overflow: hidden;
+}
+
+#item > .gallery {
+  grid-area: gallery;
+  width: 18em;
+  overflow: hidden;
+}
+
+.gallery-main {
+  width: 18em;
+  height: 18em;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.gallery-main > img {
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+
+.gallery-thumbs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 18em;
+  height: 4em;
+}
+
+.gallery-thumbs > .thumb {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.gallery-thumbs > img {
+  width: 4em;
+  object-fit: cover;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#item > .thing {
+  grid-area: thing;
+}
+
+#item > .thing h3 {
+  margin: 0px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+#item > .thing p {
+  margin: 0px;
+  font-size: smaller;
+}
+
+#item > .thing #time {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ut-md-grey);
+  margin-top: 8px;
+}
+
+#item > .technique {
+  grid-area: technique;
+  background-color: var(--ut-pink);
+}
+
+#item > .chat {
+  grid-area: chat;
+  background-color: var(--ut-red);
+}
+
+#item > .info {
+  grid-area: info;
+}
+
+#item > .steps {
+  grid-area: steps;
+  background-color: var(--ut-teal);
+}
+
+@media (min-width: 992px) {
+  #item {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "gallery thing"
+                          "gallery info"
+                          "technique  info"
+                          "chat  steps";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #item > .gallery {
+    grid-area: gallery;
+    width: 22em;
+    overflow: hidden;
+  }
+
+  #item > .gallery {
+    grid-area: gallery;
+    width: 22em;
+    overflow: hidden;
+  }
+
+  .gallery-main {
+    width: 22em;
+    height: 22em;
+    border-radius: 8px;
+  }
+
+  .gallery-thumbs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 22em;
+    height: 5em;
+  }
+
+  .gallery-thumbs > .thumb {
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .gallery-thumbs > img {
+    width: 5em;
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+}
+
+.btnsolid {
+  border-radius: 0.52em;
+  padding: 0.5rem 1.17rem;
+}
+
+.btncreator {
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-family: 'Quicksand';
+  font-weight: 638;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btncreator-sm {
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-family: 'Quicksan', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.item-title {
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+#story > p {
+  margin-top: 4px;
+  color: var(--ut-grey);
+}
+
+#tools > p {
+  margin-top: 4px;
+  color: var(--ut-grey);
+}
+
+.txtTools {
+  border: 2px solid var(--ut-yellow);
+  padding: 0.5rem 1.17rem;
+  color: var(--ut-blue);
+  background-color: white;
 }
